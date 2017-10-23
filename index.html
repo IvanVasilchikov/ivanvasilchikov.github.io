@@ -105,10 +105,10 @@
         <b>NЁRDS DESIGN STUDIO</b>
         <p>191186, Могилев,<br>ул. Б. Кукуева, д. 19/8</p>
         <p>тел. +8 800 555 35 35</p>
-        <button class="btn">Напишите нам</button>
+        <button class="btn btn-active">Напишите нам</button>
       </div>
-    <footer>
     </div>
+    <footer>
     <div class="main-footer container clearfix">
       <div class="social">
         <a href="#"><img src="vk.png"></a>
@@ -134,6 +134,16 @@
  </label>
 </form>
 </div>
-
+<script>
+  var link=document.querySelector(".btn-active");
+    var popup=document.querySelector(".modal-content");
+      var close=document.querySelector(".modal-content-close");
+  link.addEventListener("click",function(){
+      popup.classList.add("modal-content-show");
+  });
+    close.addEventListener("click",function(){
+      popup.classList.remove("modal-content-show");
+    })
+</script>
  </body>
 </html>

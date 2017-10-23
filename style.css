@@ -284,6 +284,9 @@ width:590px;
 .modal-content-close::after{
 	transform:rotate(-45deg); 
 }
+.modal-content-show{
+	display:block;
+}
 .name{
 	float:left;
 	width:200px;
