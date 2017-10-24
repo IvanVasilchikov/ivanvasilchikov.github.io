@@ -38,8 +38,11 @@
 	font-size:14px;
 	line-height:30px;
 	padding-top:60px;
-	padding-right:45px; 
+	padding-right:60px; 
 
+}
+.top-menu li:last-child{
+	padding-right: 0px;
 }
 .top-menu .logo-inner{
 	float:left;
@@ -205,11 +208,14 @@ background-color:#d6ae2c;
 .studio-item{ 
 display:inline-block; 
 vertical-align:top; 
-margin-right:115px; 
+margin-left:100px; 
+
 } 
-.studio-item:last-child{ 
-margin-right:0px; 
-} 
+.studio-item:nth-child(2)
+{
+	margin-left:70px;
+}
+
 .studio-item a { 
 opacity: 0.4; 
 
@@ -227,7 +233,6 @@ margin-left: 80px;
 }
 .map{
 	margin-top:80px; 
-	background-image:url(map.png);
 	min-height:420px;
 	position:relative;    
 }
@@ -284,6 +289,7 @@ width:590px;
 .modal-content-close::after{
 	transform:rotate(-45deg); 
 }
+
 .modal-content-show{
 	display:block;
 }
