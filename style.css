@@ -102,6 +102,10 @@
 .slider{
 	padding-top:160px; 
 }
+.featured{
+	margin-top:80px;
+	margin-bottom:150px; 
+}
 .featured b{
 	font-size:18px;
 	line-height:30px;
@@ -113,9 +117,7 @@
 	line-height:22px;
 	color:#283136;  
 }
-.featured img{
-	padding-bottom:25px;
-}
+
 
 .advantage{
 	display:inline-block;
@@ -158,9 +160,17 @@ background-color:#d6ae2c;
 .presentations .btn:active{
 	background-color:#c09b24;
 }
+.studio{
+	margin-bottom:80px; 
+}
 .left-studio{
 	float:left;
 	width:590px;
+}
+.left-studio ul{
+	list-style: none;
+	margin:0;
+	padding: 0;
 }
 .left-studio h2{
 	font-size:36px;
@@ -168,7 +178,8 @@ background-color:#d6ae2c;
 }
 .left-studio h4{
 	font-size:16px;
-	color:#283136; 
+	color:#283136;
+
 }
 .left-studio p{
 	font-size:16px;
@@ -190,6 +201,10 @@ background-color:#d6ae2c;
 .left-studio li:first-child{
 	padding-top:30px;
 }
+.left-studio h2{
+	padding:0;
+	margin:0;  
+}
 .right-studio{
 	float:right;
 	width:250px; 
@@ -204,6 +219,9 @@ background-color:#d6ae2c;
         position: absolute;
         left:-18px;
         color:#fb565a; 
+}
+.studio-futer{
+	margin-bottom:80px; 
 }
 .studio-item{ 
 display:inline-block; 
@@ -232,7 +250,7 @@ height: 2px;
 margin-left: 80px; 
 }
 .map{
-	margin-top:80px; 
+	margin-bottom:80px;  
 	min-height:420px;
 	position:relative;    
 }
@@ -300,4 +318,7 @@ width:590px;
 .mail{
 	float:right;
 	width:200px; 
+}
+.footer{
+	margin-bottom:80px; 
 }
