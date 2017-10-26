@@ -174,11 +174,18 @@ background-color:#d6ae2c;
 }
 .left-studio h2{
 	font-size:36px;
+	padding:0;
+	margin:0;  
+	 padding-bottom:40px; 
 
 }
 .left-studio h4{
 	font-size:16px;
 	color:#283136;
+		padding:0;
+	    margin:0; 
+	    padding-bottom:15px; 
+
 
 }
 .left-studio p{
@@ -201,13 +208,19 @@ background-color:#d6ae2c;
 .left-studio li:first-child{
 	padding-top:30px;
 }
-.left-studio h2{
-	padding:0;
-	margin:0;  
-}
+
 .right-studio{
 	float:right;
 	width:250px; 
+}
+.right-studio h5{
+	padding:0;
+	margin:0;
+	margin-bottom:40px;  
+}
+.right-studio ul{
+	margin:0;
+	padding: 0;
 }
 .right-studio li{
 	list-style:none;
