@@ -241,6 +241,9 @@ margin-left: 80px;
 	left:150px;
 	top:85px;   
 }
+.footer{
+	margin-top:150px; 
+}
 .social{
 float:left;
 width:250px;
@@ -308,6 +311,9 @@ width:590px;
 	margin-right:60px;
 	display:inline-block;
 	vertical-align:top;    
+}
+.content-item:hover{
+	outline: 1px solid grey;
 }
 .content-item p{
 	margin:0;
