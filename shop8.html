@@ -2,18 +2,18 @@
 <html>
  <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="shopstyle8.css">
+  <link rel="stylesheet" href="css/shopstyle8.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
   <title>BelSneak</title>
-   <script src="jquery-3.2.1.min.js"></script>
+   <script src="js/jquery-3.2.1.min.js"></script>
  </head>
  <body>
  	<header class="header clearfix ">
       <div class="top-menu">
         <a class="logo-inner" href="index.html">
-          <img src="logo.png" width="60" height="60">
+          <img src="image/logo.png" width="60" height="60">
         </a>
         <ul>
           <li>
@@ -33,18 +33,32 @@
     </header>
     <div class="content clearfix">
     	 	<div class="left-collum clearfix">
+            <div class="main">
+      <h3>Спасибо!</h3>
+      <p>Оставьте ваши контактные данные и наш консультант<br/>
+свяжется с вами в течении 30 секунд</p>
+       
+    <form id="application" action="#" method="get" name=" application ">
+      <input name="name" id="applicationName" maxlength="20" placeholder="Введите ваше имя" required />
+      <input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail" required/>
+      <input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required />
+      <button class="applicationButton" type="submit" form="application"> Отправить заявку </button>
+      <button class="applicationButton modal-content-close" type="submit" form="application"> Отмена</button>
+
+    </form>
+  </div>
     	 		<div class="all-mini">
-    	 		<div class="mini-content-photo"> <img  class="image-hover1" src="shop_img_8/content-photo.png" width="60" height="60"> </div>
+    	 		<div class="mini-content-photo"> <img  class="image-hover1" src="image/shop_img_8/content-photo.png" width="60" height="60"> </div>
     	 		
-    	 		<div  class="mini-content-photo"> <img  class="image-hover2" src="shop_img_8/content-photo1.png" width="60" height="60"> </div>
+    	 		<div  class="mini-content-photo"> <img  class="image-hover2" src="image/shop_img_8/content-photo1.png" width="60" height="60"> </div>
     	 		
-    	 		<div  class="mini-content-photo"> <img  class="image-hover3" src="shop_img_8/content-photo2.png" width="60" height="60"> </div>
+    	 		<div  class="mini-content-photo"> <img  class="image-hover3" src="image/shop_img_8/content-photo2.png" width="60" height="60"> </div>
     	 		
-    	 		<div  class="mini-content-photo"> <img  class="image-hover4" src="shop_img_8/content-photo3.png" width="60" height="60"> </div>
+    	 		<div  class="mini-content-photo"> <img  class="image-hover4" src="image/shop_img_8/content-photo3.png" width="60" height="60"> </div>
     	 		
-    	 		<div  class="mini-content-photo"> <img  class="image-hover5" src="shop_img_8/content-photo4.png" width="60" height="60"> </div>
+    	 		<div  class="mini-content-photo"> <img  class="image-hover5" src="image/shop_img_8/content-photo4.png" width="60" height="60"> </div>
     	 		
-    	 		<div  class="mini-content-photo"> <img  class="image-hover6" src="shop_img_8/content-photo5.png" width="60" height="60"> </div>
+    	 		<div  class="mini-content-photo"> <img  class="image-hover6" src="image/shop_img_8/content-photo5.png" width="60" height="60"> </div>
     	 		
     	 	</div>
     	 <div class="content-photo"></div>
@@ -99,7 +113,15 @@
       image.classList.add("content-photo5");});
        miniimage6.addEventListener("mouseover",function(){
        $(".content-photo5").removeClass("content-photo1 content-photo2 content-photo3 content-photo4 content-photo content-photo6");});
-
+var link=document.querySelector(".shop-link");
+    var popup=document.querySelector(".main");
+    var close=document.querySelector(".modal-content-close");
+  link.addEventListener("click",function(){
+      popup.classList.add("modal-content-show");
+  });
+   close.addEventListener("click",function(){
+      popup.classList.remove("modal-content-show");
+    });
    
 
 </script>
